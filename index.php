@@ -7,7 +7,7 @@
 
     /////////////////////////////////////navegação
     echo "<a href=''>Adicionar User</a>";
-
+    echo 'teste1';
     /////////////////////////////////// tabela com users existentes
 
 
@@ -15,7 +15,7 @@
     include 'gestor.php';
     $gestor = new Gestor();
 
-
+    echo 'teste2';
     ///////////////////////////////////// buscar dados de users registados
     $resultados = $gestor->EXE_QUERY("SELECT * FROM users");
     ///////////////////////////////////// apresentar resultados numa tabela
