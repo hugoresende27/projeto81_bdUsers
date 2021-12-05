@@ -17,9 +17,9 @@
     echo '<pre>';
     print_r ($gestor);
     ///////////////////////////////////// buscar dados de users registados
-    $resultados = $gestor->EXE_QUERY("SELECT * FROM users");
+    //$resultados = $gestor->EXE_QUERY("SELECT * FROM users");
     ///////////////////////////////////// apresentar resultados numa tabela
-    echo count($resultados);
+    //echo count($resultados);
     echo 'teste1';
     echo '<pre>';
     print_r ($gestor);
