@@ -21,6 +21,8 @@
     ///////////////////////////////////// apresentar resultados numa tabela
     echo count($resultados);
     echo 'teste1';
+    echo '<pre>';
+    print_r ($gestor);
     
 ?>
 
