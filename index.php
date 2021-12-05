@@ -6,7 +6,7 @@
 
 
     /////////////////////////////////////navegação
-    echo '<a href="">Adicionar User</a>';
+    echo "<a href=''>Adicionar User</a>";
 
     /////////////////////////////////// tabela com users existentes
 
