@@ -14,15 +14,11 @@
     /////////////////////////////////////incluir o sistema de gestão
     include 'gestor.php';
     $gestor = new Gestor();
-    echo '<pre>';
-    print_r ($gestor);
+
     ///////////////////////////////////// buscar dados de users registados
-    //$resultados = $gestor->EXE_QUERY("SELECT * FROM users");
+    $resultados = $gestor->EXE_QUERY("SELECT * FROM tbl_autores");
     ///////////////////////////////////// apresentar resultados numa tabela
-    //echo count($resultados);
-    echo 'teste1';
-    echo '<pre>';
-    print_r ($gestor);
+    echo count($resultados);
     
 ?>
 
