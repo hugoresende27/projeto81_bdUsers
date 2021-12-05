@@ -14,8 +14,8 @@
     /////////////////////////////////////incluir o sistema de gestão
     include 'gestor.php';
     $gestor = new Gestor();
-
-    echo 'teste2';
+    echo '<pre>';
+    print_r ($gestor);
     ///////////////////////////////////// buscar dados de users registados
     $resultados = $gestor->EXE_QUERY("SELECT * FROM users");
     ///////////////////////////////////// apresentar resultados numa tabela
