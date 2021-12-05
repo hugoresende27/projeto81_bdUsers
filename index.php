@@ -19,8 +19,17 @@
     ///////////////////////////////////// buscar dados de users registados
     $resultados = $gestor->EXE_QUERY("SELECT * FROM users");
     ///////////////////////////////////// apresentar resultados numa tabela
-    echo '<h3> teste'.count($resultados);
-    echo '<pre>';
-    print_r($resultados);
-
+    echo count($resultados);
+    echo 'teste1';
+    
 ?>
+
+<table>
+    <thead>
+        <tr>
+            <th>USER</th>
+            <th>CRIADO EM:</th>
+            <th>AÇÔES</th>
+        </tr>
+    </thead>
+</table>
