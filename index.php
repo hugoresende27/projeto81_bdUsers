@@ -19,6 +19,7 @@
     $resultados = $gestor->EXE_QUERY("SELECT * FROM tbl_autores");
     ///////////////////////////////////// apresentar resultados numa tabela
     echo count($resultados);
+    echo '<h1>teste2</h1>';
     
 ?>
 
