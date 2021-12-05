@@ -16,7 +16,7 @@
     $gestor = new Gestor();
 
     ///////////////////////////////////// buscar dados de users registados
-    $resultados = $gestor->EXE_QUERY("SELECT * FROM tbl_autores");
+    $resultados = $gestor->EXE_QUERY("SELECT * FROM users");
     ///////////////////////////////////// apresentar resultados numa tabela
     echo count($resultados);
     echo '<h1>teste2</h1>';
