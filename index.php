@@ -6,7 +6,7 @@
 
 
     /////////////////////////////////////navegação
-    echo "<a href=''>Adicionar User</a>";
+    echo "<a href='form_novo_user.php'>Adicionar User</a>";
     /////////////////////////////////// tabela com users existentes
     echo '<hr>';
 
@@ -15,7 +15,7 @@
     $gestor = new Gestor();
 
     ///////////////////////////////////// buscar dados de users registados
-    $resultados = $gestor->EXE_QUERY("SELECT * FROM users");
+    $utilizadores = $gestor->EXE_QUERY("SELECT * FROM users");
     ///////////////////////////////////// apresentar resultados numa tabela
     
     
@@ -30,6 +30,17 @@
             <th>AÇÔES</th>
         </tr>
     </thead>
+    <tbody>
+
+    <?php foreach($utilizadores as $usuario): ?>
+        <tr>
+            <td><?php echo ($usuario['user'])?></td>
+            <td><?php echo ($usuario['created_at'])?></td>
+            <td>Editar | Eliminar</td>
+        </tr>
+    <?php endforeach; ?>
+
+    </tbody>
 </table>
 
-<p>Resultados : <?php echo count($resultados) ?></p>
+<p>Resultados : <?php echo count($utilizadores) ?></p>
