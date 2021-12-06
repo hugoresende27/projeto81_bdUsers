@@ -32,8 +32,9 @@
     </thead>
     <tbody>
 
-    <?php foreach($utilizadores as $usuario): ?>
+     <?php foreach($utilizadores as $usuario): ?> 
         <tr>
+        <!-- em cada volta do ciclo cada $utilizador passa a ser $usuario  -->
             <td><?php echo ($usuario['user'])?></td>
             <td><?php echo ($usuario['created_at'])?></td>
             <td>Editar | Eliminar</td>
