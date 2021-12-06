@@ -7,9 +7,8 @@
 
     /////////////////////////////////////navegação
     echo "<a href=''>Adicionar User</a>";
-    echo '<h1>teste1</h1>';
     /////////////////////////////////// tabela com users existentes
-
+    echo '<hr>';
 
     /////////////////////////////////////incluir o sistema de gestão
     include 'gestor.php';
@@ -18,12 +17,12 @@
     ///////////////////////////////////// buscar dados de users registados
     $resultados = $gestor->EXE_QUERY("SELECT * FROM users");
     ///////////////////////////////////// apresentar resultados numa tabela
-    echo count($resultados);
-    echo '<h1>teste2</h1>';
+    
+    
     
 ?>
 
-<table>
+<table border="1">
     <thead>
         <tr>
             <th>USER</th>
@@ -32,3 +31,5 @@
         </tr>
     </thead>
 </table>
+
+<p>Resultados : <?php echo count($resultados) ?></p>
