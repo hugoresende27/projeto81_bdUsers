@@ -37,7 +37,8 @@
         <!-- em cada volta do ciclo cada $utilizador passa a ser $usuario  -->
             <td><?php echo ($usuario['user'])?></td>
             <td><?php echo ($usuario['created_at'])?></td>
-            <td>Editar | <a href="eliminar_confirmar.php?id=<?php echo $usuario['id_user'] ?>"> Eliminar </a></td>
+            <td><a href="editar_user.php?id=<?php echo $usuario['id_user'] ?>"> Editar </a>
+            &nbsp;| &nbsp; <a href="eliminar_confirmar.php?id=<?php echo $usuario['id_user'] ?>"> Eliminar </a></td>
         </tr>
     <?php endforeach; ?>
 
