@@ -1,5 +1,12 @@
 <?php
 
+    //VERIFICAR SE O ID FOI INDICADO
+    $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
+
+    if($id == false){
+        Header('location:index.php');
+    } 
+
     //buscar o id do user
     $id = $_GET['id'];
     // abrir ligação à db
@@ -15,7 +22,10 @@
         SELECT user FROM users WHERE id_user = :id_user
     ", $params);
 
-   // print_r($user);
+   //VERIFICAR SE EXISTE USER COM O ID INDICATO
+   if(count($user)==0){
+    Header('location:index.php');//CHUTAR PARA CANTO
+}
 
 ?>
 <form action="editar_final.php" method="post">

@@ -11,7 +11,7 @@
     
     //metodo 2, if not isset return to index
     // if(!isset($_GET['id'])){
-    //     Header('Location:index.php');
+    //     Header('Location:index.php');//CHUTAR PARA CANTO
     // }
 
     //metodo 3,if empty
@@ -24,16 +24,18 @@
 
     //metodo 4, filter-input - https://www.php.net/manual/pt_BR/function.filter-input.php
     
-    $id = filter_input(INPUT_GET, 'id');
+    //VERIFICAR SE O ID FOI INDICADO
+    $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);#verifica se var existe e se é do tipo int
 
     if($id == false){
-        echo 'não existe';
-        die();
-    }
+        Header('location:index.php');//CHUTAR PARA CANTO
+        //echo 'não existe';
+        //die();
+    } 
 
 
 
-    //VERIFICAR SE EXISTE USER COM O ID INDICATO
+    
     
 
     //$id = $_GET['id'];
@@ -47,6 +49,11 @@
         ':id_user' => $id
     );
     $user = $gestor->EXE_QUERY("SELECT * FROM users WHERE id_user = :id_user",$params);
+
+    //VERIFICAR SE EXISTE USER COM O ID INDICATO
+    if(count($user)==0){
+        Header('location:index.php');//CHUTAR PARA CANTO
+    }
 
 ?>
 
