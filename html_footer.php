@@ -1,9 +1,8 @@
-</div>
-</div>
+
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-12 text-center fundo-rodape p-3 fixed-bottom"><!--fixed-bottom rodapé sempre no fundo -->
+    <div class="row ">
+        <div class="col-12 text-center p-3 navbar fixed-bottom" style="background-color: grey;"><!--fixed-bottom rodapé sempre no fundo -->
 
             Empresa &copy; 
             <span class="ml-3 mr-3"> | <span class="ml-3 mr-3">

@@ -1,5 +1,6 @@
 <?php
-    
+    include 'html_header.php';
+    include 'html_footer.php';
     //VERIFICAR SE O ID FOI INDICADO
     //metodo 1, isset
     // if(isset($_GET['id'])){

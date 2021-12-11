@@ -1,4 +1,6 @@
 <?php
+    include 'html_header.php';
+    include 'html_footer.php';
 
     //VERIFICAR SE O ID FOI INDICADO
     $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
@@ -28,9 +30,13 @@
 }
 
 ?>
-<form action="editar_final.php" method="post">
-    <label>Nome User: </label>
-    <input type="hidden" name="idUser" value="<?php echo $id?>">
-    <input type="text" name="txtUser"  value="<?php echo $user[0]['user']?>" required>
-    <input type="submit" value="Alterar">
+
+<form action="editar_final.php" method="post" >
+    <div class="form-group" >
+        <label>Nome User: </label>
+        <input type="hidden" name="idUser" value="<?php echo $id?>">
+        <input type="text" name="txtUser"  value="<?php echo $user[0]['user']?>" required>
+        <input type="submit" value="Alterar">
+    </div>
 </form>
+

@@ -25,8 +25,8 @@
     
     
 ?>
-
-<table border="1" class="table-dark table-bordered table table-responsive">
+<div class="container-fluid">
+<table border="1" class="table-dark table-bordered table table-responsive ">
     <thead >
         <tr>
             <th>USER</th>
@@ -50,7 +50,10 @@
 </table>
 
 <p>Resultados : <?php echo count($utilizadores) ?></p>
+</div>
 
+</div>
+</div>
 <?php 
     include ('html_footer.php');
  

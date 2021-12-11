@@ -1,5 +1,12 @@
+<?php
+     include 'html_header.php';
+     include 'html_footer.php';
 
-    <title>Adicionar User</title>
+?>
+
+
+
+<title>Adicionar User</title>
 </head>
 <body>
 
