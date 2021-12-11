@@ -4,3 +4,9 @@ oq=google&
 aqs=edge..69i57j0i512l5j69i65l3.1401j0j1&
 sourceid=chrome&
 ie=UTF-8
+
+////////////////////////////////////////////////
+DADOS https://www.000webhost.com/
+db_name : pro_bd_81
+db_user : admin
+db_pass : whR@$x<D(Lt*92!P
