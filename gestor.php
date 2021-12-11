@@ -13,11 +13,6 @@ class Gestor
   
     private $db_charset = 'utf8';
 
-    // private $db_server = 'ec2-54-72-155-238.eu-west-1.compute.amazonaws.com';
-    // private $db_name = 'dajlhd9gjdiof7';
-    // private $db_username = 'yokxpmberaungg';
-    // PRIVATE $db_password = 'ad58b57cc1075b1624c05f50cf97a913a287fb1f17dff03c1056d1f76032a424';
-
     private $db_server ='localhost';
     private $db_name = 'bd_81';
     private $db_username = 'admin';
