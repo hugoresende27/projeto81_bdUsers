@@ -1,4 +1,6 @@
 <?php
+  include 'html_header.php';
+  include 'html_footer.php';
     //SISTEMA DE CRUD
     //echo 'tratar o formulário de novo usuário';
     //echo '<pre>';
